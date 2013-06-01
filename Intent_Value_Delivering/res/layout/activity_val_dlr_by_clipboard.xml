@@ -9,8 +9,9 @@
     tools:context=".Val_dlr_by_clipboard" >
 
     <TextView
+        android:id="@+id/textview4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
-
+        android:text="@string/hello_world"
+        android:layout_centerInParent="true"/>
 </RelativeLayout>
