@@ -1,47 +1,95 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="#000000" >
+    android:background="#000000"
+    android:orientation="vertical" >
 
-   <Button  
-       android:id="@+id/button1"
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:text="启动另一个空页面"
-       android:gravity="center"
-                      android:layout_marginTop="5dp"
-       android:layout_marginBottom="5dp"
-       android:background="#ffffff"
-       />
-   <Button  
-       android:id="@+id/button2"
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:text="使用intent.putextra传值"
-       android:layout_marginTop="5dp"
-       android:layout_marginBottom="5dp"
-       android:gravity="center"
-       android:background="#ffffff"
-       />
-   <Button  
-       android:id="@+id/button3"
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:layout_marginTop="5dp"
-       android:layout_marginBottom="5dp"
-       android:text="使用静态变量传值"
-       android:gravity="center"
-       android:background="#ffffff"
-       />
-   <Button  
-       android:id="@+id/button4"
-       android:layout_width="match_parent"
-       android:layout_marginTop="5dp"
-       android:layout_marginBottom="5dp"
-       android:layout_height="wrap_content"
-       android:text="使用剪切板传值(基本类型)"
-       android:gravity="center"
-       android:background="#ffffff"
-       />
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:text="启动另一个空页面" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:text="使用intent.putextra传值" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:text="使用静态变量传值" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:text="使用剪切板传值(基本类型)" />
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:text="使用剪切板传值(自定义类型)" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="first:"
+        android:textColor="#ffffff"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="second:"
+        android:textColor="#ffffff"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="third:"
+        android:textColor="#ffffff"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/text3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff" />
+
 </LinearLayout>

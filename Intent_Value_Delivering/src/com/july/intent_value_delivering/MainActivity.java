@@ -32,6 +32,18 @@ public class MainActivity extends Activity {
 				startActivity(intent);
 			}
 		});
+		
+		btn2.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(MainActivity.this, Val_dlr_by_intent.class);
+				intent.putExtra("name", "july");
+				intent.putExtra("tel", 123);
+				startActivity(intent);
+				
+			}
+		});
 	}
 
 }
