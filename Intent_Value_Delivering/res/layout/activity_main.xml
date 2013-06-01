@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000" >
+
+   <Button  
+       android:id="@+id/button1"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="启动另一个空页面"
+       android:gravity="center"
+                      android:layout_marginTop="5dp"
+       android:layout_marginBottom="5dp"
+       android:background="#ffffff"
+       />
+   <Button  
+       android:id="@+id/button2"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="使用intent.putextra传值"
+       android:layout_marginTop="5dp"
+       android:layout_marginBottom="5dp"
+       android:gravity="center"
+       android:background="#ffffff"
+       />
+   <Button  
+       android:id="@+id/button3"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="5dp"
+       android:layout_marginBottom="5dp"
+       android:text="使用静态变量传值"
+       android:gravity="center"
+       android:background="#ffffff"
+       />
+   <Button  
+       android:id="@+id/button4"
+       android:layout_width="match_parent"
+       android:layout_marginTop="5dp"
+       android:layout_marginBottom="5dp"
+       android:layout_height="wrap_content"
+       android:text="使用剪切板传值(基本类型)"
+       android:gravity="center"
+       android:background="#ffffff"
+       />
+</LinearLayout>
