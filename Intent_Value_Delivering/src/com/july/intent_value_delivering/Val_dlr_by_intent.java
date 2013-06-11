@@ -16,9 +16,9 @@ public class Val_dlr_by_intent extends Activity {
 		setContentView(R.layout.activity_val_dlr_by_intent);
 		text1 = (TextView)findViewById(R.id.textview1);
 		Intent i = getIntent();
-	    String name = i.getStringExtra("name");
-		int tel = i.getIntExtra("tel", 0);
-		text1.setText("name:"+name+"\ntel:"+tel);
+	    String name = i.getStringExtra("str");
+		int tel = i.getIntExtra("num", 0);
+		text1.setText("str:"+name+"\nnum:"+tel);
 	}
 
 

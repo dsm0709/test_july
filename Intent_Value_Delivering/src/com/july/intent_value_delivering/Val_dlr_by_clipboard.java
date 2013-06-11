@@ -1,22 +1,31 @@
 package com.july.intent_value_delivering;
 
-import android.os.Bundle;
+import com.july.intent_value_delivering.R.id;
+
+import android.annotation.SuppressLint;
+import android.annotation.TargetApi;
 import android.app.Activity;
-import android.view.Menu;
+import android.text.ClipboardManager;
+import android.content.Context;
+import android.os.Bundle;
+import android.widget.TextView;
+
 
 public class Val_dlr_by_clipboard extends Activity {
+	private TextView text3;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_val_dlr_by_clipboard);
+		text3 = (TextView)findViewById(R.id.textview4);
+		ClipboardManager clipboardManager = (android.text.ClipboardManager)getSystemService(Context.CLIPBOARD_SERVICE);
+		String b = clipboardManager.getText().toString();
+		text3.setText(b);
+		
+		
 	}
 
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.val_dlr_by_clipboard, menu);
-		return true;
-	}
-
+	
+	
 }

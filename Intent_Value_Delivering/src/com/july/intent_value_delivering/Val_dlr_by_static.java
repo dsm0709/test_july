@@ -1,22 +1,21 @@
 package com.july.intent_value_delivering;
 
-import android.os.Bundle;
 import android.app.Activity;
-import android.view.Menu;
+import android.os.Bundle;
+import android.widget.TextView;
 
 public class Val_dlr_by_static extends Activity {
-
+	
+	public static int num;
+	public static String str;
+	private TextView text2;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_val_dlr_by_static);
+		text2 = (TextView)findViewById(R.id.textview2);
+		text2.setText("str:"+str+"\nnum:"+num);
 	}
 
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.val_dlr_by_static, menu);
-		return true;
-	}
 
 }
